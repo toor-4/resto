@@ -1,0 +1,31 @@
+{% load static %}
+<header>
+  <img
+    style="width: 80%; height: 80px text-align: center"
+    src="{% static 'image/logo.png' %}"
+  />
+</header>
+<nav>
+  <div
+    class="box-1"
+    style="
+      background: linear-gradient(yellow, rgba(145, 145, 145, 1));
+      width: 100%;
+      height: 7px;
+    "
+  ></div>
+  <ul class="nav-bar">
+    <li><a href="{% url 'index' %}">Home</a></li>
+    <li><a href="{% url 'about' %}">About</a></li>
+    <li><a href="{% url 'book' %}">Book</a></li>
+    <li><a href="{% url 'menu' %}">Menu</a></li>
+  </ul>
+  <div
+    class="box-1"
+    style="
+      background: linear-gradient(rgba(145, 145, 145, 1), yellow);
+      width: 100%;
+      height: 7px;
+    "
+  ></div>
+</nav>

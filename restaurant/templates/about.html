@@ -1,0 +1,66 @@
+{% extends 'base.html' %} {% load static %} {% block content %}
+
+<section>
+  <article>
+    <h1>About Us</h1>
+    <!--Begin row-->
+    <div class="row">
+      <div class="column">
+        <p>
+          Nestled in the heart of Chicago, Illinois, Bella Citrus stands as a
+          cherished gem—a Mediterranean eatery with deep familial roots,
+          offering a fusion of timeless recipes infused with a contemporary
+          flair.
+        </p>
+        <p>
+          Drawing from the rich tapestry of Italian, Greek, and Turkish culinary
+          heritage, our chefs curate a dynamic menu of 12-15 seasonal delights.
+        </p>
+
+        <p>
+          Embracing a rustic ambiance exuding warmth and tranquility, Bella
+          Citrus offers an inviting retreat where indulgence meets
+          affordability, rendering it a favored destination for epicurean
+          delights throughout the day.
+        </p>
+
+        <p>
+          Guided by their shared passion for gastronomy, the restaurant is the
+          brainchild of two visionary siblings hailing from Italy—Enzo and
+          Luca—who embarked on a journey across continents to realize their
+          culinary dreams on American soil.
+        </p>
+
+        <p>
+          Steering the culinary helm is Enzo, drawing inspiration from cherished
+          family traditions and his extensive culinary odyssey in Italy.
+        </p>
+
+        <p>
+          Complementing the culinary prowess, Luca spearheads the marketing
+          endeavors, spearheading an initiative to expand the culinary horizon
+          beyond traditional Italian fare, embracing a broader Mediterranean
+          palette.
+        </p>
+      </div>
+
+      <!--End col-->
+
+      <!--Begin col-->
+      <div class="column">
+        <figure class="figure">
+          <img
+            src="{% static 'image/john-n-jane.jpg' %}"
+            alt="Mario and Adrian"
+          />
+          <figcaption class="figure-caption">
+            Resto owners Enzo and Luca.
+          </figcaption>
+        </figure>
+      </div>
+      <!--End col-->
+    </div>
+    <!--End row-->
+  </article>
+</section>
+{% endblock %}

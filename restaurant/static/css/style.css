@@ -1,0 +1,114 @@
+html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Karla", sans-serif;
+  margin: 3rem 5rem;
+}
+
+/* ================ SECTION  ================ S */
+.row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgb(41, 10, 6);
+  gap: 30px;
+  padding: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+  margin-left: 20px;
+}
+
+p,
+ul {
+  font-size: 1.25rem;
+}
+
+/* nav ul {
+  list-style: none;
+  font-size: 1.5rem;
+  text-align: center;
+  padding-inline-start: 0rem;
+  margin-bottom: 0px;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0.5rem;
+}
+
+nav ul a {
+  color: #edefee;
+  text-decoration: none;
+}
+
+nav ul a:active {
+  text-decoration: underline;
+}
+
+nav ul a:hover {
+  text-decoration: underline;
+  text-decoration-thickness: 0.1rem;
+} */
+
+/* ================ FIGURE  ================ S */
+.figure {
+  margin: 0px;
+}
+
+/* ================ RESPONSIVE  ================ S */
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  input {
+    width: 100%;
+  }
+
+  #button {
+    width: 100%;
+  }
+}
+
+/* ================ HEADER / NAV-BAR  ================ S */
+.nav-bar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  font-size: 1.5rem;
+  /* background-color: #060b69; */
+}
+
+.nav-bar li {
+  float: left;
+}
+
+.nav-bar li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 40px;
+  text-decoration: none;
+}
+
+/* Add media query for responsive behavior */
+/* @media screen and (max-width: 600px) {
+  .nav-bar li {
+    float: none;
+    display: inline-block;
+  }
+} */
