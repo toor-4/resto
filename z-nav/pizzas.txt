@@ -1,0 +1,23 @@
+focacia
+funghi
+margherita
+prosciutto
+salamino
+spinaci
+
+1. Margherita
+$10
+A classic pizza topped with tomato sauce, mozzarella cheese, and 
+fresh basil leaves.
+
+2. Pepperoni
+$12
+ A savory pizza topped with tomato sauce, mozzarella cheese, 
+ and slices of spicy pepperoni.
+
+ 3.Hawaiian
+ $15
+ A tropical pizza topped with tomato sauce, mozzarella cheese, 
+ ham, and pineapple chunks
+
+
