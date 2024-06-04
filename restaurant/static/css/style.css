@@ -111,7 +111,7 @@ main article {
 .menu-price {
   display: block;
   font-size: 1.2rem;
-  color: red;
+  color: rgb(255, 72, 0);
 }
 
 .figure {
@@ -194,3 +194,24 @@ h2 {
     display: block;
   }
 } */
+
+#hero {
+  background-image: linear-gradient(
+      0deg,
+      rgba(110, 97, 97, 0.3),
+      rgba(91, 81, 170, 0.4)
+    ),
+    url("../image/restaurant inside alternative.jpg");
+  /* background-size: cover; */
+  background-position: 75%;
+  /* color: white; */
+  color: yellow;
+  min-height: 200px;
+  text-align: center;
+}
+/* @index.html in 30% off */
+#hero p {
+  font-size: 2rem;
+  margin: 0;
+  text-shadow: 2px 2px 4px #333333;
+}
