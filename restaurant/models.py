@@ -2,7 +2,7 @@ from django.db import models
 
 # Create your models here.
 class Booking(models.Model):
-    firs_name = models.CharField(max_length = 200 )
+    first_name = models.CharField(max_length = 200 )
     last_name = models.CharField(max_length = 200)
     guest_number = models.IntegerField()
     comment = models.CharField(max_length=1000)

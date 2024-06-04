@@ -1,0 +1,44 @@
+<!-- <p>
+  flex-basis: 50%; is a CSS property-value pair that is used in Flexbox layout
+  to define the initial size of a flex item along the main axis. In Flexbox,
+  there are three main properties that control the sizing of flex items:
+  flex-grow: Defines how much a flex item can grow relative to the rest of the
+  flex items inside the same flex container. flex-shrink: Defines how much a
+  flex item can shrink relative to the rest of the flex items inside the same
+  flex container. flex-basis: Defines the initial size of a flex item before the
+  remaining space is distributed. It can be set to a specific length (e.g.,
+  pixels or percentage) or one of the keywords like auto. When flex-basis is set
+  to 50%, it means that the initial size of the flex item will be 50% of the
+  available space along the main axis. For instance, if you have a flex
+  container that is 1000 pixels wide and a flex item with flex-basis: 50%;, that
+  flex item will initially be sized to 500 pixels. Here's an example of how
+  flex-basis: 50%; might be used in a simple Flexbox layout: css Copy code
+  .container { display: flex; } .item { flex-basis: 50%; } html Copy code
+</p> -->
+<style>
+  .container {
+    display: flex;
+    /* background-color: blue; */
+  }
+  .item {
+    flex-basis: 50%;
+  }
+
+  .item:nth-child(1) {
+    background-color: yellow;
+  }
+
+  .item:nth-child(2) {
+    background-color: blue;
+    font-size: 2em;
+  }
+</style>
+<div class="container">
+  <div class="item 1">Flex Item 1</div>
+  <div class="item 2">Flex Item 2</div>
+</div>
+<!-- In this example, both flex items will initially take up 50% of the available
+space along the main axis of the flex container. Another example of flex-basis
+could be setting it to a specific length: css Copy code .item { flex-basis:
+200px; } In this case, regardless of the container's size, the initial width of
+the flex item will be 200 pixels. -->
