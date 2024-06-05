@@ -17,7 +17,7 @@ body {
 .header-wrapper h1 {
   background-color: rgb(221, 202, 218);
   font-size: 3rem;
-  color: green;
+  color: rgb(9, 128, 7);
   /* font-family: "Holtwood One SC", serif; */
   font-weight: 700;
   letter-spacing: 15px;
@@ -61,15 +61,14 @@ body {
   margin-bottom: 5px;
   color: rgb(26, 25, 25);
   font-weight: 100;
-  font-size: 2.5rem;
-  /* font-family: "Holtwood One SC", serif; */
-  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
-    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
-  letter-spacing: 3px;
-  /* line-height: 50%; */
+  letter-spacing: 2px;
   padding: 8px;
 }
 
+.visit > span {
+  font-size: 40px;
+  color: green;
+}
 /* span {
   opacity: 0;
   transition: all 0.05s infinite;
@@ -167,7 +166,7 @@ h2 {
   font-size: 2rem;
   color: #333333;
   margin: 1rem 0px;
-  font-family: "Times New Roman", Times, serif;
+  font-family: "Courier New", Courier, monospace;
 }
 .open {
   margin-left: auto;
