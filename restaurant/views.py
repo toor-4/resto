@@ -22,10 +22,9 @@ def book(request):
 
 def menu(request):
     data = Menu.objects.all()
-    print(data)
-    pizza = {'menu' : data}
-    print(pizza)
-    return render(request,'menu.html', pizza)
+    menu_data = {'menu' : data}
+    
+    return render(request,'menu.html', menu_data)
 
 def menu_item(request,pk=None):
     if pk:

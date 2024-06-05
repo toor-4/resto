@@ -1,10 +1,12 @@
 html {
   margin: 0px;
   padding: 0px;
+  box-sizing: border-box;
 }
 
 body {
   margin: 3px 5%;
+  font-family: Verdana, sans-serif;
 }
 
 /* ============== H E A D E R  AND N A V - B A R==============  */
@@ -16,10 +18,8 @@ body {
   background-color: rgb(221, 202, 218);
   font-size: 3rem;
   color: green;
-  font-family: "Holtwood One SC", serif;
+  /* font-family: "Holtwood One SC", serif; */
   font-weight: 700;
-  /* font-style: normal; */
-  /* text-shadow: 6px 2px 9px black; */
   letter-spacing: 15px;
   box-shadow: 2px 3px 8px black;
   padding: 10px 25px;
@@ -36,7 +36,6 @@ body {
   margin: 0;
   padding: 0;
   background-color: #333;
-  /* background-color: green; */
   overflow: hidden;
 }
 
@@ -56,13 +55,42 @@ body {
   color: #333;
 }
 
+/* ============== INDEX.html - ANIME class ==============  */
+.visit {
+  margin-top: 0;
+  margin-bottom: 5px;
+  color: rgb(26, 25, 25);
+  font-weight: 100;
+  font-size: 2.5rem;
+  /* font-family: "Holtwood One SC", serif; */
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  letter-spacing: 3px;
+  /* line-height: 50%; */
+  padding: 8px;
+}
+
+/* span {
+  opacity: 0;
+  transition: all 0.05s infinite;
+  transform: translateY(50px);
+  display: inline-block;
+}
+
+span.fade {
+  opacity: 1;
+  color: blue;
+  transform: translateY(0px);
+}  */
+
 /* ============== S E C T I O N ==============  */
 section {
   display: flex;
-  gap: 0.5rem;
+  gap: 1rem;
   /* margin-top: 1rem; */
-  /* margin-bottom: 1rem; */
+  margin-bottom: 1rem;
   flex-direction: row;
+  letter-spacing: 1px;
 }
 
 article {
@@ -89,23 +117,17 @@ main article {
   display: flex;
   flex-direction: row;
   width: 100%;
-  padding-bottom: 1rem;
   gap: 40px;
 }
 
 .column {
   flex-basis: 50%;
-  margin-bottom: 1rem;
-  padding-bottom: 1rem;
-}
 
-/* .about-wrapper {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  border: 1px solid black;
-  gap: 30px;
-  padding: 30px;
-} */
+  /* margin-bottom: 1rem; */
+  padding-bottom: 1rem;
+  /* font-family: Verdana, sans-serif; */
+  letter-spacing: 1px;
+}
 
 /* ============== M E N U.htnl ==============  */
 .menu-price {
@@ -127,13 +149,11 @@ img {
 }
 
 /* ============== F O O T E R ==============  */
-.footer-wrapper {
+.wrapper {
   display: grid;
-  grid-template-columns: 10fr 1fr;
-  /* text-align: center; */
-  /* padding-left: 5px; */
-  /* display: flex; */
-  /* justify-content: space-between; */
+  grid-template-columns: 1fr 16fr;
+  grid-template-rows: 50px 50px 50px;
+  margin-top: -10px;
 }
 
 /* ============== H1 H2 ==============  */
@@ -146,11 +166,9 @@ h1 {
 h2 {
   font-size: 2rem;
   color: #333333;
-  margin: 1rem 0;
-  /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
-  font-family: Verdana, sans-serif;
+  margin: 1rem 0px;
+  font-family: "Times New Roman", Times, serif;
 }
-
 .open {
   margin-left: auto;
 }
@@ -177,41 +195,4 @@ h2 {
   #button {
     width: 100%;
   }
-}
-/* 
-@media (max-width: 800px) {
-  .container {
-    display: block;
-  }
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    font-size: 1.5em;
-  }
-
-  section {
-    display: block;
-  }
-} */
-
-#hero {
-  background-image: linear-gradient(
-      0deg,
-      rgba(110, 97, 97, 0.3),
-      rgba(91, 81, 170, 0.4)
-    ),
-    url("../image/restaurant inside alternative.jpg");
-  /* background-size: cover; */
-  background-position: 75%;
-  /* color: white; */
-  color: yellow;
-  min-height: 200px;
-  text-align: center;
-}
-/* @index.html in 30% off */
-#hero p {
-  font-size: 2rem;
-  margin: 0;
-  text-shadow: 2px 2px 4px #333333;
 }

@@ -1,58 +1,90 @@
-{% extends 'base.html' %}
-{% load static %}
+{% extends 'base.html' %} {% load static %} {% block content %}
+<div>
+  <h1 class="visit">Come Visit Us!</h1>
+</div>
 
-{% block content %}
 <section>
-    <article id="hero">
-      <h1 class="heading-shadow">SPECIAL OFFER</h1>
-      <p>
-        30% Off This Weekend 
-      </p>
-      <a href="{% url 'book' %}" class="cta"> Book now </a>
-    </article>
-  </section>
-  <section>
-    <article>
-      <h2>Pizza Lover</h2>
-      <img src="{% static 'image/spinaci.jpg' %}">
-      <p>
-        Our menu consists of 12-15 seasonal items based on Italian, Greek, and Turkish culture.
-      </p>
-      <p>
-        <!-- deleted here -->
-      </p>
-    </article>
-    <article>
-      <h2>Book a table</h2>
-      <img src="{% static 'image/margherita.jpg' %}">
-      <p>
-        Reserve your table for an Italian, Greek, and Turkish dining experience.
-      </p>
-      <p>
-        <a href="{% url 'book' %}">Book your table now</a>
-      </p>
-    </article>
-    <article>
-      <h2>Hours Open</h2>
-      <img src="{% static 'image/spreadToppings.png' %}">
-      <p>
-        The Little Lemon Restaurant is open 7 days a week, except for public holidays. 
-      </p>
-      <ul class="open">
-        <li>Mon - Fri: 2pm - 10pm</li>
-        <li>Sat: 2pm - 11pm</li>
-        <li>Sun: 2pm - 9pm</li>
-      </ul>
-    </article>
+  <article>
+    <h2>Spinaci</h2>
+    <img src="{% static 'image/spinaci.jpg' %}" />
+    <p>
+      Pizza spinaci is a type of pizza that is topped with spinach. Spinach is
+      typically wilted before being placed on the pizza. Pizza spinaci can be
+      made with a variety of sauces, but it is most commonly made with a white
+      sauce or a tomato sauce.
+    </p>
   </article>
-  </section>
-  <section>
-    <article>
-      <h2>Dine with us</h2>
-      <img class="pasta" src="{% static 'image/pasta.jpg' %}">
-      <p>
-        Enjoy the delicious foods we have as we serve them with pride.
-      </p>
-    </article>
-  </section>
-  {% endblock %}
+
+  <article>
+    <h2>Prosciutto</h2>
+    <img src="{% static 'image/prosciutto.jpg' %}" />
+    <p>
+      Pizza prosciutto is a type of pizza that is topped with prosciutto, a type
+      of Italian dry-cured ham. Prosciutto is typically thinly sliced and placed
+      on the pizza after it has been baked. Pizza prosciutto can be made with a
+      variety of sauces, but it is most commonly made with a white sauce or a
+      tomato sauce.
+    </p>
+  </article>
+
+  <article>
+    <h2>Margherita</h2>
+    <img src="{% static 'image/margherita.jpg' %}" />
+    <p>
+      Pizza margherita is a type of pizza that is topped with tomatoes,
+      mozzarella cheese, and fresh basil. It is named after Queen Margherita of
+      Savoy, who was the wife of King Umberto I of Italy. Pizza margherita is
+      considered to be the classic Neapolitan pizza, and it is one of the most
+      popular types of pizza in the world.
+    </p>
+  </article>
+</section>
+<section>
+  <article>
+    <h2>Salamino</h2>
+    <img src="{% static 'image/salamino.jpg' %}" />
+    <p>
+      Pizza salamino is a type of pizza that is topped with salami, a type of
+      cured sausage. Salami is typically sliced thinly and placed on the pizza
+      after it has been baked. Pizza salamino can be made with a variety of
+      sauces, but it is most commonly made with a tomato sauce.
+    </p>
+  </article>
+
+  <article>
+    <h2>Focaccia</h2>
+    <img src="{% static 'image/focaccia.jpg' %}" />
+    <p>
+      Focaccia is a type of Italian flatbread that is typically baked in a
+      shallow pan. It is made with a simple dough of flour, water, yeast, salt,
+      and olive oil. Focaccia can be topped with a variety of ingredients, such
+      as herbs, cheese, vegetables, and meat. It is often served as an appetizer
+      or side dish.
+    </p>
+  </article>
+
+  <article>
+    <h2>Funghi</h2>
+    <img src="{% static 'image/funghi.jpg' %}" />
+    <p>
+      Pizza funghi is a type of pizza that is topped with mushrooms. The most
+      common type of mushroom used on pizza funghi is the button mushroom, but
+      other types of mushrooms, such as portobello mushrooms, shiitake
+      mushrooms, and cremini mushrooms, can also be used. Pizza funghi is
+      typically made with a white sauce, but it can also be made with a red
+      sauce.
+    </p>
+  </article>
+</section>
+
+<section>
+  <article>
+    <h2>Dine with us</h2>
+    <img
+      style="height: 90vh; width: 100%"
+      src="{% static 'image/pasta.jpg' %}"
+    />
+  </article>
+</section>
+<script src="{% static 'js/app.js' %}"></script>
+{% endblock %}

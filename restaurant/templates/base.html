@@ -20,14 +20,6 @@
       href="{% static 'image/citrus.png' %}"
     />
 
-    <!-- Include your CSS files here -->
-    <!-- <link
-      rel="preload"
-      as="style"
-      href="{% static 'css/style.css' %}"
-      onload="this.rel = 'stylesheet'"
-    /> -->
-
     <link rel="stylesheet" href="{% static 'css/style.css' %}" />
 
     <link
@@ -49,12 +41,10 @@
   </head>
 
   <body>
-    <!--Header-->
     {% include 'partials/_header.html' %}
 
     <main>{% block content %} {% endblock %}</main>
 
-    <!-- footer -->
     {% include 'partials/_footer.html' %}
   </body>
 </html>
