@@ -56,13 +56,9 @@ body {
 }
 
 /* ============== H O M E.html - ANIME class ==============  */
-.collapsed {
-  overflow: hidden;
-  max-height: 100px;
-  transition: max-height 0.3s ease;
-}
 
 .visit {
+  position: relative;
   margin-top: 0;
   margin-bottom: 5px;
   color: rgb(26, 25, 25);
@@ -76,18 +72,6 @@ body {
   font-size: 36px;
   color: green;
 }
-/* span {
-  opacity: 0;
-  transition: all 0.05s infinite;
-  transform: translateY(50px);
-  display: inline-block;
-}
-
-span.fade {
-  opacity: 1;
-  color: blue;
-  transform: translateY(0px);
-}  */
 
 /* ============== S E C T I O N ==============  */
 section {
@@ -159,13 +143,6 @@ img {
   height: 85%;
 }
 
-/* ============== F O O T E R ==============  */
-/* .wrapper {
-  display: grid;
-  grid-template-columns: 1fr 16fr;
-  grid-template-rows: 50px 50px 50px;
-  margin-top: -10px;
-} */
 .wrapper {
   display: flex;
   margin-top: -14px;
@@ -188,9 +165,7 @@ h2 {
   margin: 1rem 0px;
   font-family: "Courier New", Courier, monospace;
 }
-.open {
-  margin-left: auto;
-}
+
 /* ============== RESPONSIVE BEHAVIOR ==============  */
 
 @media (max-width: 800px) {
@@ -216,11 +191,29 @@ h2 {
     padding: 0px;
   }
 }
-/* input {
-    width: 100%;
+
+.time {
+  position: relative;
+}
+
+.time > li:nth-child(1) {
+  animation: moveToLeft 1s;
+}
+.time > li:nth-child(2) {
+  animation: moveToLeft 1.5s;
+}
+.time > li:nth-child(3) {
+  animation: moveToLeft 2s;
+}
+
+@keyframes moveToLeft {
+  0% {
+    transform: translateX(120px);
+    opacity: 0;
   }
 
-  #button {
-    width: 100%;
+  100% {
+    transform: translateX(0);
+    opacity: 1;
   }
-} */
+}
